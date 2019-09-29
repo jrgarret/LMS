@@ -2,6 +2,9 @@ FROM ubuntu:bionic
 
 ENV LANG C.UTF-8
 ENV DEBIAN_FRONTEND noninteractive
+ENV TZ America/Chicago
+ENV PUID 1026
+ENV GUID 100
 ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=7.9.2&revision=1&geturl=1&os=deb
 
 RUN apt-get update && \
@@ -20,7 +23,7 @@ RUN userdel squeezeboxserver
 
 VOLUME /music /config
 
-EXPOSE 3443 3443/udp 9000 9090
+EXPOSE 3483 3483/udp 9000 9090
 
 COPY entrypoint.sh /entrypoint.sh 
 RUN chmod 755 /entrypoint.sh
