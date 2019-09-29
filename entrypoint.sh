@@ -1,7 +1,7 @@
 #!/bin/sh
 
-: ${PUID:=1000}
-: ${PGID:=1000}
+: ${PUID:=1026}
+: ${PGID:=100}
 
 groupadd -g $PGID squeezeboxserver
 
