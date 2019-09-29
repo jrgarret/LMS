@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 
 ENV LANG C.UTF-8
 ENV DEBIAN_FRONTEND noninteractive
-ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=7.9.2&revision=1&geturl=1&os=deb
+ENV PACKAGE_VERSION_URL=http://downloads.slimdevices.com/nightly/7.9/sc/f6c4ca266697b032ac6a067d1f7cb9976dc38e83/logitechmediaserver_7.9.2~1568726655_all.deb
 
 RUN apt-get update && \
     apt-get -y install curl wget faad flac lame sox libio-socket-ssl-perl libcrypt-openssl-rsa-perl tzdata && \
