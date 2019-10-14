@@ -5,7 +5,8 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TZ America/Chicago
 ENV PUID 1026
 ENV GUID 100
-ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=7.9.2&revision=1&geturl=1&os=deb
+#ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=7.9.2&revision=1&geturl=1&os=deb
+ENV PACKAGE_VERSION_URL=http://downloads.slimdevices.com/nightly/7.9/sc/7ffe9c244489a2fc68cae69233e5c903a4f45c44/logitechmediaserver_7.9.2~1570959002_all.deb
 
 RUN apt-get update && \
     apt-get -y install curl wget faad flac lame sox libio-socket-ssl-perl libcrypt-openssl-rsa-perl tzdata && \
