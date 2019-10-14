@@ -18,7 +18,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Delete the user created by install. It will be recreated by the entrypoint
-# with proper user and group id.
+# with proper user and group id....
 RUN userdel squeezeboxserver
 
 VOLUME /music /config
