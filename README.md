@@ -14,6 +14,7 @@ docker run -d \
   -p 9090:9090 \
   -p 3483:3483 \
   -p 3483:3483/udp \
+  -p 5353:5353/udp \
   -p 4070:4070 \
   -v <path to music>:/music \
   -v <path to data>:/config \
@@ -34,6 +35,7 @@ services:
     ports:
       - 3483:3483
       - 3483:3483/udp
+      - 5353:5353/udp
       - 9000:9000
       - 9090:9090
       - 4070:4070
