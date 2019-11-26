@@ -24,7 +24,7 @@ RUN userdel squeezeboxserver
 
 VOLUME /music /config
 
-EXPOSE 3483 3483/udp 9000 9090
+EXPOSE 3483 3483/udp 9000 9090 5353/udp
 
 COPY entrypoint.sh /entrypoint.sh 
 RUN chmod 755 /entrypoint.sh
