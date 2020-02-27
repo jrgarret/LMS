@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TZ America/Chicago
 ENV PUID 1026
 ENV GUID 100
-ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=7.9.3&revision=1&geturl=1&os=deb
+ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=8.0&revision=1&geturl=1&os=deb
 
 
 RUN apt-get update && \
