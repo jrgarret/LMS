@@ -5,8 +5,8 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TZ America/Chicago
 ENV PUID 1026
 ENV GUID 100
-#ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=8.0&revision=1&geturl=1&os=deb
-ENV PACKAGE_VERSION_URL=http://downloads.slimdevices.com/nightly/8.0/lms/b7d9ed8e7356981cb9d5ce2cea67bd5f1d7b6ee3/logitechmediaserver_8.0.1~1607593012_all.deb
+ENV PACKAGE_VERSION_URL=http://www.mysqueezebox.com/update/?version=8.0.1&revision=1&geturl=1&os=deb
+
 
 
 
